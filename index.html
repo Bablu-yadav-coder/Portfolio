@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+   <!-- font-awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <header>
+        <nav >
+            <div id="left">Bablu's Porfolio</div>
+            <div id="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="https://github.com/Bablu-yadav-coder">Project</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <Section>
+        <div class="container">
+            <div class="left-side">
+                <h1>Hi, My name is <span>Bablu Yadav</span>
+                    and I am passionate a <br><span id="element"></span>
+                </h1>
+            </div>
+            <div class="right-side"></div>
+        </div>
+    </Section>
+
+    <hr>
+
+    <div class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>I am pursuing <u>B.tech </u> (CSE) from Vaish College of Engineering, Rohtak Haryana. (2022 - 2026)</li>
+            <li>I did schooling from Sarvodaya Vidyapeeth Inter College, Salon , Raebareli UP. (XII)</li>
+        </ul>
+    </div>
+
+    <hr>
+    <h3 id="skill">Skills</h3>
+    <div  class="skill-section">
+       
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    
+    <h2 id="project">Projects</h2>
+    <div  class="projects">
+        <div class="box">
+            <img src="spotify.png" alt="">
+            <h3>Spotify Clone</h3>
+            <ul>
+                <li>Clone using HTML and CSS</li>
+                <li>Including Library, Featured-charts, Popular-Artist and Popular-songs section</li>
+            </ul>    
+        </div>
+
+        <div class="box">
+            <img src="tic-tac.jpeg" alt="">
+            <h3>Tic Tac Toe</h3>
+            <ul>
+                <li>Responsive and interactive Tic-Tac-Toe Game</li>
+                <li>Using HTML CSS and Javascript</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <img src="chatbot.png" alt="">
+            <h3>Chatbot</h3>
+            <ul>
+                <li>Responsive, interactive and real AI Chatbot</li>
+                <li>Using Javascript And Open-Ai API_KEY</li>
+            </ul>    
+        </div> 
+    </div>
+
+    <hr>
+    <div class="hobbies">
+        <h2>Hobbies</h2>
+            <ul>
+                <li>Travelling</li>
+                <li>Cricket</li>
+                <li>Coding</li>
+            </ul>
+    </div>
+    <footer> 
+        <div id="contact" class="footer-container">
+            <div class="first">
+                <h2>Bablu's Developer Portfolio</h2>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i> 
+                        <a href="https://www.linkedin.com/in/bablu-yadav-054459286/">LinkedIN</a>
+                    </li>
+                    <li> 
+                        <i class="fa-brands fa-github"></i> 
+                        <a href="https://github.com/Bablu-yadav-coder">GitHub</a></li>
+                    
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-phone"></i><b> Phone  : </b> +91 765201XXXX</p>
+                <p><i class="fa-solid fa-envelope"></i><b>Email : </b> babluyaduvanshi780@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="rights">
+            <p> Copyrigth &copy; babluportfolio.com | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', '&amp; Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
