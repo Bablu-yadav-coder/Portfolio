@@ -107,7 +107,15 @@ span {
     border-radius: 9999px;
     box-shadow: inset 0 3px 3px rgb(141, 195, 242),
         2px -3px 3px rgb(141, 195, 242), 2px 3px 3px rgb(141, 195, 242);
+        transition: all 0.2s ease;
 
+}
+
+.left-section .download:hover {
+
+    box-shadow: none;
+    border: 1px solid gray;
+    background: none;
 }
 
 .left-section .download a {
@@ -284,7 +292,7 @@ main hr {
     border-radius: 1rem;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(0, 89, 161));
 
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .projects .content>a {
@@ -301,6 +309,7 @@ main hr {
 
 .projects>div>.content:hover {
     opacity: 1;
+    
 }
 
 
