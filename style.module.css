@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 33, 0.941);
+    color: white;
+    font-family: "Poppins", serif;
+    ;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(0, 0, 33);
+}
+
+nav .left {
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(151, 151, 246);
+    font-size: 1.03rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+
+
+.firstSection {
+    padding-inline: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 15vh;
+}
+
+
+
+
+.left-section .hello {
+    font-size: 1.8rem;
+
+}
+
+
+
+.title span {
+    color: rgb(30, 93, 180);
+
+}
+
+.title,
+span {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.left-section .bio {
+    font-size: 1rem;
+}
+
+
+.left-section .download {
+    padding: 8px;
+    padding-inline: 1.5rem;
+    background: rgba(19, 176, 207, 0.858);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+    letter-spacing: 1px;
+    outline: none;
+    border: 0;
+    border-radius: 9999px;
+    box-shadow: inset 0 3px 3px rgb(141, 195, 242),
+        2px -3px 3px rgb(141, 195, 242), 2px 3px 3px rgb(141, 195, 242);
+
+}
+
+.left-section .download a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* hero section banner */
+
+.rigth-section {
+    flex: 0.6;
+}
+
+.rigth-section img {
+    width: 27vw;
+}
+
+
+
+/*  */
+
+
+main hr {
+    border: 0;
+    height: 1px;
+    margin: 50px 80px 50px;
+    background: #7b7bbc;
+}
+
+
+
+
+.about-Section {
+    height: 100vh;
+    background-color: rgb(7, 52, 66);
+    padding-inline: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+
+.about-Section div>p {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+/* skill section  */
+
+.skill-section>p {
+    margin-top: 3rem;
+}
+
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+.box-container {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    grid: wrap;
+
+}
+
+.box-container>div {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+    border: 2px solid rgba(187, 177, 177, 0.834);
+    border-radius: 1rem;
+
+
+    box-shadow:
+        0 -4px 4px rgb(141, 195, 242, 0.5), 0 4px 4px rgb(141, 195, 242, 0.5);
+    transition: all ease 0.3s;
+}
+
+
+.box-container>div:hover {
+    cursor: pointer;
+    background-color: rgb(141, 195, 242);
+}
+
+
+
+.box-container>div img {
+    width: 130px;
+}
+
+
+.box-container .box11 {
+    grid-column-start: 3;
+}
+
+
+
+
+
+
+/* project-section */
+
+
+
+.projects-section {
+    height: 90vh;
+
+    background: rgb(7, 52, 66);
+    margin-top: 5rem;
+    padding-top: 3rem;
+
+}
+
+
+.projects-section .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+
+.projects>div {
+    height: 200px;
+    width: 25vw;
+    /* border: 2px solid gray; */
+    border-radius: 1rem;
+    position: relative;
+}
+
+.projects div>img {
+    width: 100%;
+    height: 200px;
+    min-width: 250px;
+    border-radius: 1rem;
+    border: 0;
+}
+
+.projects>div .content {
+    opacity: 0;
+    position: absolute;
+    bottom: 0.01rem;
+    z-index: 10;
+    color: white;
+    height: 200px;
+    width: 25vw;
+    min-width: 250px;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(0, 89, 161));
+
+    transition: all 0.2s ease-in;
+}
+
+.projects .content>a {
+    text-decoration: none;
+    color: white;
+    margin: 1.2rem 1rem 0;
+}
+
+
+.projects .content p {
+    margin-inline: 1rem;
+}
+
+
+.projects>div>.content:hover {
+    opacity: 1;
+}
+
+
+.share-icon {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(18, 18, 62);
+    padding: 35px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-container>div {
+    width: 300px;
+}
+
+.footer-container .contact p {
+    padding-left: 20px;
+    width: 400px;
+}
+
+.social-media a,
+i {
+    text-decoration: none;
+    color: white;
+
+}
+
+.social-media li {
+    opacity: 0.6;
+}
+
+.social-media li:hover {
+    opacity: 1;
+}
+
+.footer-container .social-media i {
+    font-size: 25px;
+    margin: 5px 10px 0 0;
+}
+
+.footer-container .contact i {
+    font-size: 25px;
+    margin: 5px 8px 0 0;
+}
+
+.contact p {
+    opacity: 0.7;
+}
+
+.rights {
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+.rights p {
+    opacity: 0.5;
+}
+
+
+@media (max-width : 700px) {
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .firstSection div {
+        width: 420px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer-container div {
+        margin: 15px 0;
+    }
+}
