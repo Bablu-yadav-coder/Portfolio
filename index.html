@@ -17,6 +17,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+
+
+
 </head>
 
 <body>
@@ -36,9 +39,9 @@
     </header>
 
     <main>
-        <section id="home" class="firstSection">
+        <section id="home" class="firstSection scroll-animate">
 
-            <div class="left-section">
+            <div class="left-section ">
 
                 <p class="hello">Hello, I am </p>
                 <p class="title">Bablu yadav</p>
@@ -46,7 +49,7 @@
                 <p class="bio">Building Bridges Between Front-End and Back-End, Transforming Ideas into Web Reality!!
                 </p>
 
-                <button class="download"> 
+                <button class="download">
 
                     <a href="./assets/Bablu Yadav fullstack resume.pdf">
                         My Resume <i class="fa-solid fa-download"></i>
@@ -73,11 +76,11 @@
             <div>
                 <p id="heading">About <span style="color: rgb(30, 93, 180);"> Me</span></p>
 
-                <p>
+                <p class="scroll-animate">
 
                     I’m a Full Stack Developer with a strong foundation in HTML, CSS, JavaScript, Bootstrap, SQL,
                     MongoDB, Node.js, Express.js, ReactJS, NextJs.
-                    <br>
+                    <!-- <br> -->
                     I'm a passionate and creative web developer,
                     I specialize in both front-end and back-end development, bringing ideas to life with clean code and
                     a
@@ -102,7 +105,7 @@
             <p id="heading">Technical <span style="color: rgb(30, 93, 180);"> Skills</span></p>
 
 
-            <div class="skill-container">
+            <div class="skill-container script-animate">
 
 
 
@@ -180,7 +183,7 @@
             <p id="heading">My <span style="color: rgb(30, 93, 180);"> Projects</span></p>
 
 
-            <div class="projects">
+            <div class="projects scroll-animate">
                 <div class="">
 
                     <img src="./assets/proconnect.jpg" alt="Pro-connect ">
@@ -273,19 +276,6 @@
         </section>
 
 
-        <!-- <section class="sectionFour">
-            <h1>Education</h1>
-            <div>
-
-                <p><b>College :</b> Vaish College of Engineering, Rohtak Haryana(2022-26) </p>
-                <p><b>School :</b> I did schooling from Sarvodaya Vidyapeeth inter College, Salon Raebareli UP</p>
-            </div>
-        </section> -->
-
-
-
-        <!-- <iframe src="./assets/Bablu Yadav fullstack resume.pdf" width="100%" height="800px">
-        </iframe> -->
 
 
 
@@ -326,12 +316,16 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
+
+    <script src="./script.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['Software Engineer.', 'Web Developer.'],
             typeSpeed: 50,
         });
     </script>
+
+
 
 </body>
 
